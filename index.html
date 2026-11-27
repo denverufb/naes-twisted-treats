@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#14154a">
+  <meta name="description" content="Explore the food and drink menus at Nae’s Twisted Treats in Ferguson, Missouri.">
+  <title>Nae’s Twisted Treats | Ferguson, Missouri</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="menu.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar" id="top">
+    <div class="shell topbar-inner">
+      <a class="brand" href="#top" aria-label="Nae’s Twisted Treats home"><strong>Nae’s</strong><span>TWISTED<br>TREATS</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#menu">Menu</a>
+        <a href="about.html">About</a>
+        <a class="nav-visit" href="#visit">Visit</a>
+      </nav>
+    </div>
+    <section class="hours-strip" id="hours" aria-labelledby="hours-title">
+      <div class="shell hours-strip-inner">
+        <h2 id="hours-title">Hours</h2>
+        <dl>
+          <div><dt>Mon–Thu</dt><dd><time datetime="12:00">Noon</time>–<time datetime="21:00">9 PM</time></dd></div>
+          <div><dt>Friday</dt><dd><time datetime="12:00">Noon</time>–<time datetime="22:00">10 PM</time></dd></div>
+          <div><dt>Saturday</dt><dd><time datetime="14:00">2 PM</time>–<time datetime="22:00">10 PM</time></dd></div>
+          <div><dt>Sunday</dt><dd>Closed</dd></div>
+        </dl>
+      </div>
+    </section>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-understory" src="assets/understory.png" alt="" aria-hidden="true">
+      <div class="shell hero-inner">
+        <div class="hero-copy">
+          <p class="location-tag">FERGUSON, MISSOURI</p>
+          <h1 id="hero-title" class="visually-hidden">Nae’s Twisted Treats</h1>
+          <img class="hero-logo" src="assets/naes-logo.jpg" alt="" width="980" height="653" fetchpriority="high">
+          <p class="hero-description">Honey-hot wings, Cajun pasta, and colorful slushy flights.</p>
+          <p class="hero-rating">
+            <span class="rating-star" aria-hidden="true">★</span>
+            <strong>4.7/5</strong>
+            <a href="https://www.google.com/search?q=Nae%27s+Twisted+Treats+Ferguson+MO+Google+reviews">230 Google reviews</a>
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://www.doordash.com/store/naes-twisted-treats-saint-louis-36002811/?pickup=true">Order on DoorDash</a>
+            <a class="button button-outline" href="#food" data-menu-link="food">Explore the menu</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-photo"><img src="assets/tropical-table.jpg" alt="Glazed chicken wings, fries, and a tropical drink" width="1550" height="1033" fetchpriority="high"></div>
+          <img class="hero-pineapples" src="assets/pineapples.png" alt="" aria-hidden="true">
+        </div>
+      </div>
+    </section>
+    <div class="specials-strip">
+      <span>Cooked fresh to order</span>
+      <span class="specials-icon" aria-hidden="true">✦</span>
+      <span>Ask about our specials</span>
+    </div>
+    <section class="menu-area" id="menu" aria-labelledby="menu-title">
+      <div class="menu-backdrop" aria-hidden="true">
+        <img src="assets/menu-canopy.jpg" alt="" loading="lazy">
+      </div>
+      <div class="shell">
+        <header class="menu-head">
+          <h2 id="menu-title">The Menu</h2>
+        </header>
+        <div class="menu-switch" hidden aria-label="Choose a menu">
+          <button type="button" data-menu-button="food" aria-pressed="true" aria-controls="food">Food Menu</button>
+          <button type="button" data-menu-button="drinks" aria-pressed="false" aria-controls="drinks">Drink Menu</button>
+        </div>
+        <div class="menu-panel" id="food" aria-label="Food menu">
+          <div class="menu-intro">
+            <p>Fries come seasoned.</p>
+          </div>
+          <div class="menu-grid">
+            <section class="menu-card">
+              <h3>Chicken</h3>
+              <p class="category-description">Served with fries. Choose regular, hot, honey-hot, garlic Parmesan, lemon pepper, or twisted (honey-hot lemon pepper). Chicken strips include one dipping sauce.</p>
+              <ul>
+                <li><span>Chicken strips (5)</span><strong>$15</strong></li>
+                <li><span>Whole wings (5)</span><strong>$17</strong></li>
+              </ul>
+              <p class="card-note">Extra sauce $2. Substitute onion rings for $1, or salad, broccoli, or mixed vegetables for $2.50.</p>
+            </section>
+            <section class="menu-card">
+              <h3>Seafood</h3>
+              <p class="category-description">Served with fries. Choose honey hot, lemon pepper, or honey hot lemon pepper.</p>
+              <ul>
+                <li><span>Catfish plate</span><strong>$18</strong></li>
+                <li><span>Swai fish strips</span><strong>$16</strong></li>
+                <li><span>Salmon bites (6)</span><strong>$15</strong></li>
+                <li><span>Fried shrimp (6)</span><strong>$15</strong></li>
+              </ul>
+              <p class="card-note">Sauce tossed $1 or on the side $2.</p>
+            </section>
+            <section class="menu-card">
+              <h3>Cajun Pasta</h3>
+              <p class="category-description">Alfredo sauce, peppers, tomatoes, and a roll. Unavailable after 7 p.m. when busy.</p>
+              <ul>
+                <li><span>Chicken</span><strong>$16</strong></li>
+                <li><span>Salmon</span><strong>$12</strong></li>
+                <li><span>Shrimp</span><strong>$20</strong></li>
+                <li><span>Meatless</span><strong>$18</strong></li>
+              </ul>
+              <p class="card-note">Add broccoli $2.</p>
+            </section>
+            <section class="menu-card">
+              <h3>Burgers &amp; Sandwiches</h3>
+              <p class="category-description">Served with fries. Cheese, lettuce, tomatoes, pickles, and onions.</p>
+              <ul>
+                <li><span>Beef burger<small>Extra patty $4</small></span><strong>$12</strong></li>
+                <li><span>Beyond Burger (veggie)<small>Extra patty $6</small></span><strong>$14</strong></li>
+                <li><span>Turkey burger<small>Extra patty $5</small></span><strong>$13</strong></li>
+                <li><span>Chicken sandwich<small>Fried or grilled</small></span><strong>$15</strong></li>
+              </ul>
+              <p class="card-note">Add bacon $2.</p>
+            </section>
+            <section class="menu-card">
+              <h3>Phillies</h3>
+              <p class="category-description">Served with fries. Green peppers, red peppers, onions, and Swiss cheese.</p>
+              <ul>
+                <li><span>Chicken</span><strong>$15</strong></li>
+                <li><span>Salmon</span><strong>$18</strong></li>
+                <li><span>Steak</span><strong>$16</strong></li>
+                <li><span>Twisted Philly<small>Chicken and steak</small></span><strong>$19</strong></li>
+              </ul>
+            </section>
+            <section class="menu-card">
+              <h3>Quesadillas</h3>
+              <p class="category-description">Cheese, green peppers, red peppers, and onions. Sour cream and salsa on the side.</p>
+              <ul>
+                <li><span>Cheese</span><strong>$7</strong></li>
+                <li><span>Chicken</span><strong>$12</strong></li>
+                <li><span>Steak</span><strong>$15</strong></li>
+              </ul>
+            </section>
+            <section class="menu-card">
+              <h3>Salads</h3>
+              <p class="category-description">Tomatoes, red onions, cucumbers, and cheese.</p>
+              <ul>
+                <li><span>Garden</span><strong>$10</strong></li>
+                <li><span>Salmon</span><strong>$18</strong></li>
+                <li><span>Shrimp</span><strong>$17</strong></li>
+                <li><span>Chicken<small>Fried or grilled</small></span><strong>$15</strong></li>
+              </ul>
+              <p class="card-note">Add an egg $1.50, croutons $1, or extra dressing $1.</p>
+            </section>
+            <section class="menu-card">
+              <h3>Sides</h3>
+              <ul>
+                <li><span>Broccoli</span><strong>$5</strong></li>
+                <li><span>Fries</span><strong>$4</strong></li>
+                <li><span>Onion rings</span><strong>$5</strong></li>
+                <li><span>Mixed vegetables</span><strong>$5</strong></li>
+                <li><span>Cheese fries</span><strong>$5</strong></li>
+              </ul>
+            </section>
+            <section class="menu-card">
+              <h3>Add-ons</h3>
+              <ul>
+                <li><span>3 wings</span><strong>$7</strong></li>
+                <li><span>1 swai fillet</span><strong>$6</strong></li>
+                <li><span>1 catfish</span><strong>$8</strong></li>
+                <li><span>Chicken breast</span><strong>$6</strong></li>
+                <li><span>Salmon</span><strong>$11</strong></li>
+                <li><span>Salmon bites (6)</span><strong>$11</strong></li>
+                <li><span>Shrimp (6)</span><strong>$10</strong></li>
+                <li><span>Cheese sauce</span><strong>$2</strong></li>
+              </ul>
+            </section>
+            <section class="menu-card">
+              <h3>Desserts</h3>
+              <ul>
+                <li><span>Dessert</span><strong>$10</strong></li>
+              </ul>
+              <p class="card-note">Cash only.</p>
+            </section>
+          </div>
+          <p class="advisory">Consuming raw or undercooked meat, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness.</p>
+        </div>
+        <div class="menu-panel" id="drinks" aria-label="Drink menu">
+          <div class="menu-intro"><p>Full bar available.</p></div>
+          <div class="menu-grid">
+            <section class="menu-card">
+              <h3>Cocktails</h3>
+              <ul>
+                <li><span>Nae’s Twisted<small>Tito’s and Malibu</small></span><strong>$10</strong></li>
+                <li><span>Red or white sangria<small>Served with fruit</small></span><strong>$10</strong></li>
+              </ul>
+            </section>
+            <section class="menu-card">
+              <h3>Flights</h3>
+              <ul>
+                <li><span>Margarita flight<small>Blueberry, lime, and strawberry</small></span><strong>$25 / $35</strong></li>
+                <li><span>Lemon drop flight<small>Blueberry, lemon, and strawberry</small></span><strong>$25 / $35</strong></li>
+                <li><span>Slushy flight<small>Pick up to four flavors</small></span><strong>$25 / $35</strong></li>
+              </ul>
+              <p class="card-note">House liquor $25 or premium liquor $35.</p>
+            </section>
+            <section class="menu-card">
+              <h3>Slushies</h3>
+              <p class="category-description">Green apple, pineapple, mango, strawberry, blueberry, watermelon, peach, and lemonade.</p>
+              <ul>
+                <li><span>Virgin slushy</span><strong>$7</strong></li>
+                <li><span>Slushy with alcohol<small>Add $3 for the slushy mix</small></span><strong>Liquor + $3</strong></li>
+              </ul>
+            </section>
+            <section class="menu-card">
+              <h3>Lemonade &amp; More</h3>
+              <ul>
+                <li><span>Lolo’s Lemonade<small>Strawberry, blueberry, watermelon, or peach</small></span><strong>$5</strong></li>
+                <li><span>Soda</span><strong>$2</strong></li>
+                <li><span>Tea</span><strong>$3</strong></li>
+                <li><span>Water</span><strong>$2</strong></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="visit" id="visit" aria-labelledby="visit-title">
+      <img class="visit-shore" src="assets/shore.jpg" alt="" aria-hidden="true" loading="lazy">
+      <div class="shell visit-inner">
+        <div class="visit-content">
+          <p class="eyebrow">VISIT US</p>
+          <h2 id="visit-title">See you in Ferguson.</h2>
+          <address>42 S Florissant Rd<br>Ferguson, MO 63135</address>
+          <a class="button button-primary" href="https://www.google.com/maps/search/?api=1&amp;query=42%20S%20Florissant%20Rd%2C%20Ferguson%2C%20MO%2063135">Get directions</a>
+          <a class="visit-hours-link" href="#hours">View hours</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <img class="footer-sand" src="assets/beach-sand.jpg" alt="" aria-hidden="true" loading="lazy">
+    <div class="shell footer-inner">
+      <a class="brand" href="#top" aria-label="Nae’s Twisted Treats home"><strong>Nae’s</strong><span>TWISTED<br>TREATS</span></a>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+</body>
+</html>
